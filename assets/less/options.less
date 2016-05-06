@@ -1,0 +1,99 @@
+// main: taiga.less
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,latin-ext,cyrillic-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Play);
+
+/* Colors */
+@white:#ffffff;
+@black:#000000;
+@grey3:#dadada;
+@grey2:#8f8c97;
+@grey:#312f3f;
+@green:#79bf69;
+@yellow:#f9f243;;
+@blue:#191b25;
+
+/* Links */
+@link:@black;
+@link-hover:lightest(@link, 20%);
+@button:@black;
+@button-hover:lightest(@button, 20%);
+
+/* Page */
+@grid-vertical-margin:20px;
+@grid-count:12;
+@container:1280px;
+@column-gap:20px;
+@img-border-width:1px;
+@img-border-color:#bebebe;
+
+/* Texts */
+@font-family: 'Roboto', @alt-font-medium;
+@alt-font-medium: Arial, sans-serif;
+@condensed: 'Roboto Condensed', @alt-font-medium;
+@play: 'Play', @alt-font-medium;
+@font-size:14px;
+@line-height:18px;
+@bold: 700;
+@normal: normal;
+@h1-font-size:24px;
+@h1-font-weight:700;
+@h1-line-height:28px;
+@h2-font-size:((@h1-font-size)-2px);
+@h2-font-weight:700;
+@h2-line-height:((@h1-line-height)-4px);
+@h3-font-size:((@h2-font-size)-2px);
+@h3-font-weight:700;
+@h3-line-height:((@h2-line-height)-4px);
+@h4-font-size:((@h3-font-size)-2px);
+@h4-font-weight:700;
+@h4-line-height:((@h3-line-height)-4px);
+@h5-font-size:((@h4-font-size)-2px);
+@h5-font-weight:700;
+@h5-line-height:((@h4-line-height)-4px);
+@h6-font-size:((@h5-font-size)-2px);
+@h6-font-weight:700;
+@h6-line-height:((@h5-line-height)-4px);
+@table-width:100%;
+@table-margin:@grid-vertical-margin;
+@table-td-padding:@grid-vertical-margin/4;
+@table-border-width:1px;
+@table-border-color:#031d34;
+@table-cell-background:#fff;
+@table-row-even-background:@table-cell-background;
+@table-row-odd-background:#edf3fe;
+@table-header-background:#fff;
+
+/* Forms */
+@form-placeholder-color:#868787;
+@form-element-border-color:#bebebe;
+@form-element-border-width:1px;
+@form-element-input-height:40px;
+@form-element-input-background:#fff;
+@form-element-input-font-size:14px;
+@form-element-input-color:#000;
+@form-element-textarea-height:136px;
+@form-element-textarea-font-size:@form-element-input-font-size;
+@form-element-textarea-background:@form-element-input-background;
+@form-element-textarea-line-height:16px;
+@form-element-textarea-color:@form-element-input-color;
+@grid-vertical-margin-button:@grid-vertical-margin;
+@form-element-button-color:@form-element-input-color;
+@form-element-button-hover-color:@link-hover;
+@form-element-button-font-size:@form-element-input-font-size;
+@form-element-button-border:@button;
+@form-element-button-hover-border:@button-hover;
+@form-element-button-background:@button;
+@form-element-button-hover-background:@button;
+@form-element-button-height:@button-hover;
+
+/* Modals */
+@modal-width:500px;
+@modal-padding:@grid-vertical-margin;
+@modal-color:#000;
+@modal-background:#fff;
+@modal-title-color:@modal-color;
+@modal-title-size:@h3-font-size;
+@modal-title-weight:700;
+@modal-title-line-height:@h3-line-height;

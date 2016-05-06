@@ -1,0 +1,167 @@
+// main: taiga.less
+
+body {
+	font-family: @font-family;
+	font-size:@font-size;
+	line-height:@line-height;
+}
+
+img {
+	display:block;
+
+	&.boxed {
+		border:@img-border-width solid @img-border-color;
+		.box-shadow(0, 0, 4px, 0, 0, 0, 0, 0.8);
+	}
+}
+
+a {
+	outline:none!important;
+}
+
+a {
+	color:@link;
+	text-decoration:underline;
+
+	&:hover, &:focus {
+		color:@button;
+		text-decoration:none;
+	}
+}
+
+table {
+	border-collapse:collapse;
+	width:@table-width;
+	border:@table-border-width solid @table-border-color;
+	margin:@table-margin 0;
+
+	td, th {
+		padding:@table-td-padding;
+		vertical-align:middle;
+		border:@table-border-width solid @table-border-color;
+	}
+
+	th {
+		background:@table-header-background;
+	}
+
+	tr {
+		&:nth-child(odd){
+			td {
+				background: @table-row-odd-background;
+			}
+		}
+		&:nth-child(even){
+			td {
+				background: @table-row-even-background;
+			}
+		}
+	}
+}
+
+p {
+	margin:@grid-vertical-margin 0;
+
+	img {
+		display:inline;
+		vertical-align:top;
+
+		&:first-child {
+			float:left;
+			margin: 0 @grid-vertical-margin @grid-vertical-margin/2 0;
+		}
+	}
+}
+
+.align-left {
+	text-align:left;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.align-center {
+	text-align:center;
+}
+
+.align-justify {
+	text-align:justify;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+strong, .bold {
+	font-weight:@bold;
+}
+
+h1, .h1 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h1-font-size;
+	font-weight:@h1-font-weight;
+	line-height:@h1-line-height;
+}
+
+h2, .h2 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h2-font-size;
+	font-weight:@h2-font-weight;
+	line-height:@h2-line-height;
+}
+
+h3, .h3 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h3-font-size;
+	font-weight:@h3-font-weight;
+	line-height:@h3-line-height;
+}
+
+h4, .h4 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h4-font-size;
+	font-weight:@h4-font-weight;
+	line-height:@h4-line-height;
+}
+
+h5, .h5 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h5-font-size;
+	font-weight:@h5-font-weight;
+	line-height:@h5-line-height;
+}
+
+h6, .h6 {
+	margin:@grid-vertical-margin 0;
+	font-size:@h6-font-size;
+	font-weight:@h6-font-weight;
+	line-height:@h6-line-height;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	small {
+		font-size:65%;
+	}
+}
+
+ul, ol {
+		margin:@grid-vertical-margin 0;
+		padding-left:@column-gap;
+
+		li {
+			list-style-position:inside;
+
+			ol, ul {
+				margin:@grid-vertical-margin/2 0;
+			}
+		}
+}

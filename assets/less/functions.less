@@ -1,0 +1,54 @@
+// main: taiga.less
+
+.round(@radius){
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	-o-border-radius:@radius;
+	border-radius:@radius;
+}
+
+.border-radius(@topLeft, @topRight, @bottomLeft, @bottomRight){
+	-webkit-border-radius: @topLeft @topRight @bottomLeft @bottomRight;
+	-moz-border-radius: @topLeft @topRight @bottomLeft @bottomRight;
+	-o-border-radius: @topLeft @topRight @bottomLeft @bottomRight;
+	border-radius: @topLeft @topRight @bottomLeft @bottomRight;
+}
+
+.box-shadow(@horizontal, @vertical, @blur, @spread, @color1, @color2, @color3, @opacity ){
+	-webkit-box-shadow: @horizontal @vertical @blur @spread rgba(@color1, @color2, @color3, @opacity);
+	box-shadow: @horizontal @vertical @blur @spread rgba(@color1, @color2, @color3, @opacity);
+}
+
+.box-shadow-inset (@horizontal, @vertical, @blur, @spread, @color1, @color, @color3, @opacity ){
+	-webkit-box-shadow: inset @horizontal @vertical @blur @spread rgba(@color1, @color, @color3, @opacity);
+	box-shadow:inset inset @horizontal @vertical @blur @spread rgba(@color1, @color, @color3, @opacity);
+}
+
+.text-shadow (@horizontal, @vertical, @blur, @color){
+	text-shadow: @horizontal @vertical @blur @color;
+}
+
+.font-face (@font-name, @src){
+	@font-face {
+		font-family: @font-name;
+		src: url("@src/@font-name.eot?") format("eot"),
+		url("@src/@font-name.woff") format("woff"),
+		url("@src/@font-name.ttf") format("truetype");
+	}
+}
+
+.transition (@objects, @duration, @function) {
+	-webkit-transition: @objects @duration @function;
+	-moz-transition: @objects @duration @function;
+	-ms-transition: @objects @duration @function;
+	-o-transition: @objects @duration @function;
+	transition: @objects @duration @function;
+}
+
+.rotate (@deg){
+	-moz-transform: rotate(@deg);
+	-webkit-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	transform: rotate(@deg);
+}

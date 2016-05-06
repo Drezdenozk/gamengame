@@ -1,0 +1,45 @@
+// main: taiga.less
+
+.box-modal {
+	width:@modal-width;
+	position:relative;
+	margin: 0 auto;
+	background:@modal-background;
+	padding:@modal-padding;
+	color:@modal-color;
+
+	p {
+		text-align:center;
+	}
+
+	.form-holder {
+		width:100%;
+		height:auto;
+	}
+
+	.title {
+		color: @modal-title-color;
+		font-size: @modal-title-size;
+		font-weight: @modal-title-weight;
+		line-height: @modal-title-line-height;
+		text-align:center;
+		padding:@grid-vertical-margin 0;
+	}
+
+	.arcticmodal-close {
+		width:19px;
+		height:23px;
+		position:absolute;
+		right:20px;
+		top:20px;
+		opacity:1;
+		text-indent:-9999px;
+		background:url('../img/modal/close.png') no-repeat 0 0 transparent;
+
+		&:hover,&:focus {
+			cursor:pointer;
+			background-position:0 bottom;
+			opacity:0.9;
+		}
+	}
+}

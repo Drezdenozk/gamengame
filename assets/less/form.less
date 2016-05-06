@@ -1,0 +1,88 @@
+// main: taiga.less
+
+input,textarea,button {
+	outline:none!important;
+}
+
+form {
+	width:auto;
+	margin:@grid-vertical-margin auto;
+
+	::-webkit-input-placeholder {color:@form-placeholder-color;opacity:1;}
+	::-moz-placeholder {color:@form-placeholder-color;opacity:1;}/* Firefox 19+ */
+	:-moz-placeholder {color:@form-placeholder-color;opacity:1;}/* Firefox 18- */
+	:-ms-input-placeholder {color:@form-placeholder-color;opacity:1;}
+
+	div.group {
+		display: block;
+		margin:@grid-vertical-margin 0;
+	}
+
+	input[type="text"],input[type="submit"],input[type="password"],input[type="email"],input[type="mail"] {
+		border: @form-element-border-width solid @form-element-border-color;
+		height:@form-element-input-height;
+		width:100%;
+		font-weight:400;
+		background:@form-element-input-background;
+		display:block;
+		padding:0 @grid-vertical-margin;
+		font-size: @form-element-input-font-size;
+		color:@form-element-input-color;
+
+		&:hover, &:focus {
+			background-color:darken(@form-element-input-background, 10%);
+		}
+	}
+
+	textarea {
+		border: @form-element-border-width solid @form-element-border-color;
+		height: @form-element-textarea-height;
+		width:100%;
+		font-weight:400;
+		background:@form-element-textarea-background;
+		display:block;
+		padding:@grid-vertical-margin @grid-vertical-margin;
+		font-size: @form-element-textarea-font-size;
+		color:@form-element-textarea-color;
+		line-height: @form-element-textarea-line-height;
+		text-align:left;
+		resize:none;
+
+		&:hover, &:focus {
+			background-color:darken(@form-element-textarea-background, 10%);
+		}
+	}
+
+	input[type="submit"], .button {
+		border:1px solid @form-element-button-border;
+		height:@form-element-button-height;
+		width:100%;
+		font-weight: 400;
+		background:@form-element-button-background;
+		padding:@grid-vertical-margin-button @grid-vertical-margin-button;
+		font-size: @form-element-button-font-size;
+		color:@form-element-button-color;
+		display:block;
+		text-transform:uppercase;
+		text-align:center;
+		position:relative;
+		text-transform:uppercase;
+
+		&:hover {
+			cursor:pointer;
+			background:@form-element-button-hover-background;
+			color:@form-element-button-hover-color;
+			border-color:@form-element-button-hover-border;
+		}
+	}
+}
+
+.has-error {
+	border-color:red!important;
+	color:red!important;
+
+	input, textarea {
+		border-color:red!important;
+		color:red!important;
+	}
+}

@@ -1,0 +1,187 @@
+// main: taiga.less
+
+body {
+	position: relative;
+	min-width:@container;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width:100%;
+	min-width:@container;
+}
+
+.clear {
+	content:'';
+	display:table;
+	width:100%;
+	clear:both;
+}
+
+.container {
+	width:@container;
+	margin:0 auto;
+	position:relative;
+	padding:0 @column-gap/2;
+	height:100%;
+
+	&.fluid {
+		width:100%;
+	}
+
+	&:after {
+		content: " ";
+		display: table;
+		clear:both;
+		width:100%;
+	}
+
+	&:before {
+		content: " ";
+		display: table;
+	}
+}
+
+.section {
+	width:100%;
+	min-width:@container;
+}
+
+.fixed {
+	position:fixed;
+	left:0;
+	top:0;
+}
+
+.absolute {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.relative {
+	position:relative;
+	left:0;
+	top:0;
+}
+
+.row {
+	margin:@grid-vertical-margin -1*@column-gap/2;
+
+	&.demo {
+		> * {
+			border:1px solid #000;
+			background:darken(#fff,20%);
+		}
+	}
+
+	&:after {
+		content: " ";
+		display: table;
+		clear:both;
+	}
+
+	&:before {
+		content: " ";
+		display: table;
+	}
+
+	.col {
+		min-height: 1px;
+    padding-left: @column-gap/2;
+    padding-right: @column-gap/2;
+    position: relative;
+		float:left;
+	}
+
+	.col-1 {
+		.col;
+		width:100%/@grid-count;
+	}
+
+	.col-2 {
+		.col;
+		width:200%/@grid-count;
+	}
+
+	.col-3 {
+		.col;
+		width:300%/@grid-count;
+	}
+
+	.col-4 {
+		.col;
+		width:400%/@grid-count;
+	}
+
+	.col-5 {
+		.col;
+		width:500%/@grid-count;
+	}
+
+	.col-6 {
+		.col;
+		width:600%/@grid-count;
+	}
+
+	.col-7 {
+		.col;
+		width:700%/@grid-count;
+	}
+
+	.col-8 {
+		.col;
+		width:800%/@grid-count;
+	}
+
+	.col-9 {
+		.col;
+		width:900%/@grid-count;
+	}
+
+	.col-10 {
+		.col;
+		width:1000%/@grid-count;
+	}
+
+	.col-11 {
+		.col;
+		width:1100%/@grid-count;
+	}
+
+	.col-12 {
+		.col;
+		width:1200%/@grid-count;
+	}
+}
+
+.clear {
+	&:after {
+		content:'';
+		display:table;
+		width:100%;
+		clear:both;
+	}
+}
+
+div.table {
+	display:table;
+	botder-collapse:separate;
+	width:100%;
+
+	.table-row {
+		display:table-row;
+
+		.table-cell {
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+		}
+	}
+}
